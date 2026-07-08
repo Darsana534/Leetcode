@@ -1,5 +1,7 @@
 class Solution:
-    def findNumbers(self, nums: list[int]) -> int:
-        return sum(1 for n in nums if len(str(n)) % 2 == 0)
-
-
+    def findNumbers(self, nums: List[int]) -> int:
+        ans=0
+        for num in nums:
+            if len(str(num))%2==0:
+             ans+=1
+        return ans
